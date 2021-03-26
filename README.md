@@ -1,3 +1,3 @@
 # Philita OTP Fork
 
-## _Edit only the 2.0-rc branch_
+### _Edit only the 2.0-rc branch_
