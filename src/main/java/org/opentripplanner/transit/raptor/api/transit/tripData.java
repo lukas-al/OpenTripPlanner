@@ -1,9 +1,10 @@
+// Packaging the class for OTP use
+package org.opentripplanner.transit.raptor.api.transit;
 /**
  * A class which to hold the information extracted from the tripId table.
  */
 
-// Packaging the class to use in testing
-package mypack;
+
 
 public class tripData {
     private Integer busyness; // Only occupancy is implemented for now
