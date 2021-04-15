@@ -1,23 +1,22 @@
-// Packaging the class for OTP use
-package org.opentripplanner.transit.raptor.api.transit;
-/**
- * A class which to hold the information extracted from the tripId table.
- */
+package org.opentripplanner.transit.raptor.rangeraptor.transit.philita;
 
+public class TripData {
 
+    private int busyness; // Only occupancy is implemented for now
+    private String GTFSId; // The GTFS trip ID
 
-public class tripData {
-    private Integer busyness; // Only occupancy is implemented for now
-    private String GTFSId; // The GTFS
-
-    @Override
     public String toString() {
         return "tripData[" + "GTFSId=" + GTFSId + ", busyness=" + busyness + ']';
     }
 
     // Method to set the busyness
     public void busynessSet(Integer busyness) {
-        this.busyness = busyness;
+        if (busyness != null) {
+            this.busyness = busyness;
+        } else {
+            this.busyness = Integer.MAX_VALUE;
+        }
+
     }
 
     // Method to read the busyness
